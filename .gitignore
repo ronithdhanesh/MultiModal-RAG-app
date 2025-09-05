@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+.venv/
+
+# Secrets file for Streamlit Cloud
+.streamlit/secrets.toml
+
+# Cache and output folders
+
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
