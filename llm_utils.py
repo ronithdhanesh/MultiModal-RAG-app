@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import FAISS
-from langchain.schema.messages import HumanMessage
+from langchain_core.messages import HumanMessage
 from langchain_google_genai import GoogleGenerativeAI
 import os
 from pathlib import Path
