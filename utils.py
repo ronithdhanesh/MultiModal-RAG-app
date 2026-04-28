@@ -60,8 +60,8 @@ def embed_text(text_data):
     )
     with torch.no_grad():
         features = clip_model.get_text_features(**inputs)
-        features = features / features.norm(dim=-1, keepdim=True)
-        return features.squeeze().numpy()
+        features = features / torch.linalg.norm(features,dim=-1, keepdim=True)
+        return features.squeeze().cpu().numpy()
     
 
 def process_pdf(pdf_path):
